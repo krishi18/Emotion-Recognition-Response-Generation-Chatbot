@@ -1,6 +1,9 @@
 # Emotional Sentiment Analysis and Adaptive Response System
  Develop a prototype chatbot capable of identifying the emotional state of a user based on a conversation and responding with culturally relevant and empathetic responses.
 
+### Link to dataset:
+https://www.kaggle.com/datasets/debarshichanda/goemotions/data
+
 ### Approach:
  
 This project integrates emotion recognition with adaptive response generation to create an emotionally intelligent conversational chatbot. Starting with preprocessing the dataset “GoEmotion” like treating null values, one-hot encoding etc. and further used preprocessing techniques to standardize text (e.g., removing stop words, punctuation), tokenized and prepare it for training purposes. For training, I had used a pre-trained DistilRoBERTa language model version and fine tuned using the pre-processed training dataset. After training, predictions were made based on the test data and accuracy was evaluated based on true and predicted labels. For response generation, I had used a pre-trained GPT2 model fine tuned for response generation and generated curated responses based on the input text given after identifying the targeted emotion. 
